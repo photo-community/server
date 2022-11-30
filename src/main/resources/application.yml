@@ -1,0 +1,25 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  main:
+    allow-circular-references: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    show-sql: false
+    open-in-view: false
+
+jwt:
+  token:
+    client-secret: 3c69e85afb6e4c9f8c7f0960a15a024e123124asdf32r4asdfsdaf12sajfas2187364786asdfas
+    expiration: 6000000
+
+upload-file-path: src/main/resources/upload/
+support-file-extension: xlsx, csv
+allow-cors: "*"
